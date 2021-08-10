@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KalkulatorActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Masukkan Dua Angka"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_angka_1"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edt_angka_2"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_angka_1" />
+
+    <Button
+        android:id="@+id/btn_kali"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="x"
+        android:onClick="actionKali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_bagi"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="/"
+        android:onClick="actionBagi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/btn_kali"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        android:onClick="actionTambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/btn_bagi"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_kurang"
+        android:layout_width="66dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        android:onClick="actionKurang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/btn_tambah"
+        app:layout_constraintTop_toBottomOf="@+id/edt_angka_2" />
+
+    <Button
+        android:id="@+id/btn_hps"
+        android:layout_width="328dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Bersihkan"
+        android:onClick="actionBersihkan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kali" />
+
+    <TextView
+        android:id="@+id/txt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
