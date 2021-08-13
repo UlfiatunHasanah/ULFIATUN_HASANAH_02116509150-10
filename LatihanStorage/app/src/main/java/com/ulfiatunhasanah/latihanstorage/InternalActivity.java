@@ -17,7 +17,7 @@ import java.io.IOException;
 public class InternalActivity extends AppCompatActivity {
 
     private String keyInternal = "KEY_INTERNAL_STORAGE";
-    private String FILE_NAME = "nama_file.txt";
+    private String FILE_NAME = "coba.txt";
     private TextView txtIsiFile;
     private EditText edtText;
 
@@ -50,7 +50,7 @@ public class InternalActivity extends AppCompatActivity {
             }
         }
 
-        public void actonUbahFile(View view) {
+        public void actionUbahFile(View view) {
             //String ubah = "Update Isi Data File Text";
             String ubah = edtText.getText().toString();
 
